@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DebugType>none</DebugType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Tomás Weigenast</Authors>
+    <Product>MessagePackSchema</Product>
+    <Description>Runtime library for MessagePackSchema</Description>
+    <PackageProjectUrl>https://github.com/tomasweigenast/messagepack-schema</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tomasweigenast/messagepack-schema</RepositoryUrl>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <Title>MessagePackSchema.Runtime</Title>
+    <PackageTags>messagepack;schema;message;pack;serialization;serialize;serializer;deserialize;deserialization;deserializer;</PackageTags>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+	<FileVersion>1.0.1</FileVersion>
+	<PackageVersion>1.0.1</PackageVersion>
+    <SignAssembly>False</SignAssembly>
+  
+</PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.HighPerformance" Version="8.0.0" />
+    <PackageReference Include="MessagePack" Version="2.4.35" />
+  </ItemGroup>
+
+</Project>
